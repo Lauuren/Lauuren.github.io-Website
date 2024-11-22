@@ -17,7 +17,7 @@ body {
     text-align: center;        /* Centered text */
     height: 25vh;              /* 1/4 of the viewport height (25%) */
     display: flex;             /* Flexbox for centering content */
-    justify-content: center;   /* Center horizontally */
+    justify-content: center;   /* Cengit ter horizontally */
     align-items: center;       /* Center vertically */
     font-size: 3rem;           /* Large text size */
 }
@@ -76,3 +76,9 @@ body {
 .tab-panel.active {
     display: block;
 }
+.my-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+  }
