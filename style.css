@@ -1,0 +1,68 @@
+/* Basic reset for styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Tab bar styling */
+.tab-bar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+/* Styling for the tab buttons */
+.tab-button {
+    background-color: #444;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Active tab button */
+.tab-button.active {
+    background-color: #4CAF50;
+}
+
+/* Hover effect for tabs */
+.tab-button:hover {
+    background-color: #555;
+}
+
+/* Tab content container */
+.tab-content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+/* Tab content panels */
+.tab-panel {
+    display: none;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Active tab panel */
+.tab-panel.active {
+    display: block;
+}
