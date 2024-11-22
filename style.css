@@ -20,6 +20,7 @@ body {
     justify-content: center;   /* Cengit ter horizontally */
     align-items: center;       /* Center vertically */
     font-size: 3rem;           /* Large text size */
+    padding: 20px;
 }
 
 /* Tab bar styling */
@@ -128,6 +129,7 @@ body {
     .banner {
         font-size: 2rem; /* Smaller font size for mobile */
         height: 20vh;     /* Smaller banner height */
+        padding: 15px;
     }
 
     /* Stack tab buttons vertically for mobile */
