@@ -83,3 +83,73 @@ body {
     border: 2px solid #ccc;
     border-radius: 8px;
   }
+
+  /* For screens larger than 1024px (desktops) */
+@media screen and (min-width: 1024px) {
+    .banner {
+        font-size: 3rem; /* Keep large font size for desktops */
+    }
+
+    .tab-button {
+        font-size: 18px;  /* Slightly larger buttons on desktop */
+    }
+
+    .tab-panel {
+        width: 80%; /* Content width takes up 80% of the screen */
+        height: auto; /* Let the height adjust to content */
+    }
+
+    .my-image {
+        max-width: 80%; /* Images should be smaller, but still large */
+    }
+}
+
+/* For screens between 768px and 1023px (tablets) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .banner {
+        font-size: 2.5rem; /* Slightly smaller font for tablets */
+    }
+
+    .tab-button {
+        font-size: 16px;  /* Standard size for tablet buttons */
+    }
+
+    .tab-panel {
+        width: 90%;  /* Content width takes up 90% of the screen */
+    }
+
+    .my-image {
+        max-width: 90%;  /* Images should adjust to fit tablet screens */
+    }
+}
+
+/* For screens smaller than 768px (smartphones) */
+@media screen and (max-width: 767px) {
+    .banner {
+        font-size: 2rem; /* Smaller font size for mobile */
+        height: 20vh;     /* Smaller banner height */
+    }
+
+    /* Stack tab buttons vertically for mobile */
+    .tab-bar {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .tab-button {
+        padding: 15px;
+        font-size: 14px;  /* Smaller text size for mobile */
+        width: 100%;  /* Make tab buttons take up the full width */
+    }
+
+    .tab-panel {
+        width: 100%;   /* Full-width content for mobile */
+        height: auto;  /* Let the content determine the height */
+        padding: 15px; /* Reduced padding for mobile */
+    }
+
+    .my-image {
+        max-width: 100%; /* Image will take up full width of its container */
+        height: auto; /* Ensure images maintain their aspect ratio */
+    }
+}
