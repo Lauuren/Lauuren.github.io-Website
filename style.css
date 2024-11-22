@@ -11,6 +11,16 @@ body {
     background-color: #f4f4f4;
     padding: 20px;
 }
+.banner {
+    background-color: #87CEEB; /* Green background */
+    color: white;              /* White text */
+    text-align: center;        /* Centered text */
+    height: 25vh;              /* 1/4 of the viewport height (25%) */
+    display: flex;             /* Flexbox for centering content */
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically */
+    font-size: 3rem;           /* Large text size */
+}
 
 /* Tab bar styling */
 .tab-bar {
@@ -36,7 +46,7 @@ body {
 
 /* Active tab button */
 .tab-button.active {
-    background-color: #4CAF50;
+    background-color: #1E90FF;
 }
 
 /* Hover effect for tabs */
